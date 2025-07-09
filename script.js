@@ -110,6 +110,13 @@ if (btnElement) {
         alert("Please fill in all fields before sending your message.");
         return false;
     }
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value.trim())) {
+        e.preventDefault();
+        alert("Please enter a valid email address.");
+        return false;
+    }
     alert("You have successfully sent a message!");
     });
 }
