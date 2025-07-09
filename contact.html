@@ -100,16 +100,12 @@
                 /></a>
               </button>
             </section>
-            <!-- iframe content -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19967.57435568944!2d30.221885500000003!3d51.27529845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472a8f00e898abcf%3A0x14bcceabdbfd5d2c!2sChornobyl%2C%20Kyiv%20Oblast%2C%20Ukraine!5e0!3m2!1sen!2sge!4v1731610034659!5m2!1sen!2sge"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            <!-- city search and dynamic map -->
+            <div style="margin: 24px 0; text-align:center;">
+              <input id="city-input" type="text" placeholder="Enter city name" style="padding:8px 12px; border-radius:6px; border:1px solid #ccc; width:220px; font-size:1rem;">
+              <button id="city-search-btn" style="padding:8px 18px; border-radius:6px; background:#05bcca; color:#fff; border:none; font-weight:bold; cursor:pointer; margin-left:8px;">Show Map</button>
+            </div>
+            <iframe id="city-map" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </section>
         </section>
       </section>

@@ -1,1 +1,64 @@
 
+@media (max-width: 1181px) {
+  /* header styles */
+  .header_nav {
+    position: fixed;
+    top: 100px;
+    background-color: #c46a2b;
+    left: -100%;
+    width: 200px;
+    height: 144px;
+    padding: 16px 0 16px 16px;
+    transition: 0.5s linear;
+  }
+
+  .header_nav_ul {
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  header {
+    padding-inline: 32px;
+  }
+  /* card section styles */
+  .cards_sec {
+    padding-inline: 32px 0;
+  }
+  .sec_for_cards {
+    overflow-x: scroll;
+  }
+  .card {
+    flex: 1 0 272px;
+  }
+
+  /* catalog page styles */
+
+  .cat_sec_1 {
+    padding-inline: 31px;
+  }
+  /* card styles */
+  .card7,
+  .card8,
+  .card9 {
+    display: none;
+  }
+
+  .cat_card {
+    width: 48.5%;
+  }
+
+  /* contact page styles */
+  .contact_us {
+    padding-inline: 32px;
+  }
+  .form_sec {
+    width: 506px;
+  }
+  .location_sec {
+    width: 506px;
+  }
+}

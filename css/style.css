@@ -1,3 +1,4 @@
+
 /* font import */
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
@@ -437,6 +438,51 @@ footer {
 
 .social_icon:hover {
     transform: rotate(30deg);
+}
+/* Cookie Banner Styles */
+#cookie-banner {
+  font-size: 1.3rem;
+  padding: 24px 10px;
+  background: #222;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  text-align: center;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.2);
+  font-family: "Inter", "Poppins", "Kanit", "ABeeZee", "Pridi", "Ubuntu", Arial, sans-serif;
+}
+#cookie-banner button#accept-cookies {
+  margin-left: 24px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  background: #ffb300;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+#cookie-banner button#accept-cookies:hover {
+  background: #ffd54f;
+}
+#cookie-banner button#decline-cookies {
+  margin-left: 16px;
+  padding: 10px 32px;
+  font-size: 1.1rem;
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+#cookie-banner button#decline-cookies:hover {
+  background: #b71c1c;
 }
 /*-------------catalog page styles---------------*/
 

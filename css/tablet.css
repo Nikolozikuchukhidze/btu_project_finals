@@ -1,0 +1,60 @@
+@media (max-width: 745px) {
+  /* header styles */
+  header {
+    padding-inline: 24px;
+  }
+  /* card sec styles */
+
+  .cards_sec {
+    padding: 48px 0 36px 24px;
+  }
+
+  /* footer styles */
+  footer {
+    gap: 40px;
+  }
+
+  /* catalog page styles */
+  .cat_sec_1 {
+    padding: 48px 24px;
+  }
+
+  /* card styles */
+
+  .card5,
+  .card6 {
+    display: none;
+  }
+
+  .cat_card {
+    width: 100%;
+  }
+
+  /* contact page styles */
+
+  .contact_us {
+    padding: 64px 24px;
+  }
+
+  .main_sec {
+    flex-direction: column;
+    gap: 48px;
+    padding: 16px;
+  }
+
+  .form_sec {
+    width: 100%;
+  }
+  .form_title {
+    margin-bottom: 24px;
+  }
+
+  .location_sec {
+    width: 100%;
+    row-gap: 24px;
+  }
+
+  .button_section {
+    gap: 42px;
+  }
+}
