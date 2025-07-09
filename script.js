@@ -17,9 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const res = await fetch(url, { headers: { 'Accept-Language': 'en' } });
         const data = await res.json();
         if (data && data.length > 0) {
-            const lat = data[0].lat;
-            const lon = data[0].lon;
-            cityMap.src = `https://www.openstreetmap.org/export/embed.html?bbox=${lon-0.05},${lat-0.05},${lon+0.05},${lat+0.05}&layer=mapnik&marker=${lat},${lon}`;
+            const lat = parseFloat(data[0].lat);
+            const lon = parseFloat(data[0].lon);
+            // Calculate bounding box for a reasonable zoom
+            const delta = 0.05;
+            const left = lon - delta;
+            const right = lon + delta;
+            const top = lat + delta;
+            const bottom = lat - delta;
+            cityMap.src = `https://www.openstreetmap.org/export/embed.html?bbox=${left},${bottom},${right},${top}&layer=mapnik&marker=${lat},${lon}`;
         } else {
             alert('City not found.');
             cityMap.src = '';
